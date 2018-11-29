@@ -62,7 +62,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             public void handle(String time) { // 回调接口，获得选中的时间
                 currentDate.setText(time.split(" ")[0]);
             }
-        }, "2010-01-01 00:00", now); // 初始化日期格式请用：yyyy-MM-dd HH:mm，否则不能正常运行
+        }, "2000-01-01 00:00", "2027-12-31 00:00"); // 初始化日期格式请用：yyyy-MM-dd HH:mm，否则不能正常运行
         customDatePicker1.showSpecificTime(false); // 不显示时和分
         customDatePicker1.setIsLoop(false); // 不允许循环滚动
 
